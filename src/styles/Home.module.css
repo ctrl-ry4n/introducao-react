@@ -1,0 +1,12 @@
+.container {
+  width: 100%;
+  max-width: 1024px;
+  padding: 90px 20px;
+  margin: 0 auto;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 05px;
+}
