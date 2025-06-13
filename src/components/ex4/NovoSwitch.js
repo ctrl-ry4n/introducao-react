@@ -8,25 +8,20 @@ export default function NovoSwitch() {
     const corDeFundoAzul = styles.bg_azul;
 
     const [corAlterada, setCorAlterada] = useState(false);
-    const [corFundo, setCorFundo] = useState(styles.padrao);
+  
 
     function trocar() {
-      if(corAlterada === true) {
-        setCorAlterada(false);
-      setCorFundo(corDeFundoVermelho);
-    } else {
-    setCorAlterada(true);
-      setCorFundo(corDeFundoAzul);
-    }
-
-
+    setCorAlterada(!corAlterada);
     }
 
     return(
-        <div className={corFundo}>
-            <h1>Alterando a cor da Div</h1>
-            <button onClick={trocar} className={styles.btn}>trocar</button>
+        <div>
+          <section className={corAlterada ? corDeFundoVermelho : corDeFundoAzul}>
+          <h1>Alterando a cor da Div</h1>
+          </section>  
+            <section>
+              <button onClick={trocar} className={styles.btn}>trocar</button>
+            </section>
         </div>
-
     )
 };

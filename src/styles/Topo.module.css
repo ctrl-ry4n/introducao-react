@@ -1,7 +1,32 @@
 .topo{
+    display: flex;
+    justify-content: center;
     color: #fff;
-    background-color: red;
+    background-color: rgb(27, 48, 66);
+    padding: 1%;
+}
+.topo h1{
     font-size: 1.5rem;
     text-align: center;
-    margin: 0;
+}
+
+.botaoMenu{
+    position: absolute;
+    left: 10px;
+    padding: 3px;
+}
+
+.menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 90vh;
+  padding: 30px 20px;
+  max-width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2b3945;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }

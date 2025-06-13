@@ -1,3 +1,7 @@
+'use client';
+import { state } from 'react';
+
+
 import Head from "next/head";
 import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
@@ -13,18 +17,9 @@ import GeradorAleatorio from "@/components/ex3/GeradorAleatorio";
 import NovoSwitch from "@/components/ex4/NovoSwitch";
 
 
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export default function Home() {
+
+
   return (
     <>
       <Head>
@@ -34,20 +29,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-      <Topo/>
+        <Topo/>
       <section className={styles.container}>
-{/*   <Card/> */}
-{/*   <Card/> */}
-{/*   <Card/> */}
-       <Botao/>
-       <Switch/>
-       <GeradorAleatorio/>
-       <NovoSwitch/>
+      {/*<Card/> */}
+      {/*<Card/> */}
+      {/*<Card/> */}
+        <Botao/>
+        <Switch/>
+        <GeradorAleatorio/>
+        <NovoSwitch/>
       </section>
-      <Rodape/>
+        <Rodape/>
       </main>
-
-
     </>
   );
 }

@@ -1,6 +1,10 @@
 .rodape{
+    
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     color: #fff;
-    background-color: red;
+    background-color: rgb(27, 48, 66);
     font-size: 1rem;
     text-align: center;
     margin: 0;
