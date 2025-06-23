@@ -1,40 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 📚 Introdução ao React — Projeto de Aprendizado
 
-## Getting Started
+Este projeto faz parte do meu aprendizado com **React**, abordando conceitos fundamentais como:
 
-First, run the development server:
+✅ Criação de componentes
+✅ Uso de `useState` para gerenciar estado
+✅ Manipulação de eventos com `onClick`
+✅ Implementação de um **Menu Sanduíche (Hamburguer Menu)**
+✅ Alternância de **Dark Mode**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 💡 Objetivo
+
+Esse projeto foi criado com foco em aprendizado, prática e experimentação dos conceitos básicos do React. Não é um produto final, mas um laboratório para entender o funcionamento dos hooks e manipulação de estado.
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+* [React](https://react.dev/)
+* [JavaScript (ES6+)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+* [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+
+---
+
+## 🎯 Funcionalidades Implementadas
+
+### ✅ Gerenciamento de Estado com `useState`
+
+Utilizamos o hook `useState` para:
+
+* Controlar a abertura e fechamento do menu sanduíche
+* Alterar o tema entre modo claro e modo escuro
+* Atualizar o estado da interface em tempo real, com re-renderização automática dos componentes
+
+Exemplo básico:
+
+```js
+const [darkMode, setDarkMode] = useState(false);
+
+function toggleDarkMode() {
+    setDarkMode(!darkMode);
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### ✅ Manipulação de Eventos com `onClick`
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Eventos de clique foram usados para:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+* Abrir/fechar o menu sanduíche
+* Ativar/desativar o modo escuro
+* Disparar interações na interface de forma reativa
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+### ✅ Menu Sanduíche (Hamburguer Menu)
 
-To learn more about Next.js, take a look at the following resources:
+Criamos um menu lateral responsivo, inspirado em aplicações mobile, que pode ser:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+✔️ Aberto e fechado ao clicar no ícone de "três linhas"
+✔️ Usado para navegação ou exibição de links importantes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+### ✅ Dark Mode (Modo Escuro)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+O modo escuro foi implementado utilizando:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+* Um botão para alternância do tema
+* Condicionais que alteram as classes ou estilos do componente
+* Uso do `useState` para manter o tema atual
+
+---
+
+## 📂 Estrutura do Projeto
+
+```
+/introducao-react
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── MenuSanduiche.jsx
+│   │   └── DarkModeToggle.jsx
+│   ├── App.jsx
+│   ├── index.js
+│   └── styles/
+├── package.json
+└── README.md
+```
+
