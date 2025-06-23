@@ -1,32 +1,69 @@
-.topo{
+.light_mode header{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    color: #000000;
+    background-color: rgb(39, 77, 110);
+    padding: 1%;
+    
+}
+
+.dark_mode header{
+  display: flex;
+    justify-content: space-around;
     color: #fff;
     background-color: rgb(27, 48, 66);
     padding: 1%;
 }
-.topo h1{
+
+.light_mode h1{
     font-size: 1.5rem;
     text-align: center;
 }
 
 .botaoMenu{
-    position: absolute;
-    left: 10px;
-    padding: 3px;
+    background: none;
+    border: none;
+    font-size: 30px;
 }
 
 .menu {
   position: absolute;
-  top: 100%;
   left: 0;
   width: 100%;
-  height: 90vh;
+  height: 90%;
   padding: 30px 20px;
   max-width: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #2b3945;
+  background: linear-gradient(to right, #2b3945, #596772a6);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu ul {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style: none;
+}
+
+.menu ul li {
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px 30px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.alteraTema{
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    font-size: 30px;
 }
